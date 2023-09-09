@@ -39,7 +39,7 @@ class _WeatherHomePageState extends State<WeatherHomePage> {
 
   void setday() async {
     List datetime = weather.date.split(' ');
-    var hours = datetime[0].split(':');
+    var hours = datetime[1].split(':');
     var turnInt = int.parse(hours[0]);
     if (turnInt >= 19 || turnInt <= 5) {
       print(turnInt);
